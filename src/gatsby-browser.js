@@ -1,6 +1,6 @@
 exports.onRouteUpdate = function({ location }) {
   // Don't track while developing.
-  if (process.env.NODE_ENV === `production` && typeof ga === `function`) {
+  if (typeof ga === `function`) {
     if (
       location &&
       typeof window.excludeGAPaths !== `undefined` &&
